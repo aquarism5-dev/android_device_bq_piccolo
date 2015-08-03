@@ -1,0 +1,3 @@
+/data/cam_socket([0-9])+                      u:object_r:camera_socket:s0
+
+/persist/softmac                              u:object_r:wifi_data_file:s0

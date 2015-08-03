@@ -1,0 +1,10 @@
+[
+  {
+    "repository": "android_device_bq_msm8939-common",
+    "target_path": "device/bq/msm8939-common"
+  },
+  {
+    "repository": "android_kernel_bq_piccolo",
+    "target_path": "kernel/bq/piccolo"
+  }
+]
