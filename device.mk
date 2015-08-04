@@ -56,10 +56,6 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libmm-qcamera
 
-# CMHW JNI
-PRODUCT_PACKAGES += \
-    libjni_cmhw
-
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8916
