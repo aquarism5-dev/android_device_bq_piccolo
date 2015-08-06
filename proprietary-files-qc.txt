@@ -109,6 +109,8 @@ vendor/lib/libmm-color-convertor.so
 bin/qseecomd
 bin/qseecom_sample_client
 lib/libdrmdecrypt.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libQSEEComAPI.so
@@ -117,8 +119,6 @@ vendor/lib/libssd.so
 vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
-vendor/lib/drm/libdrmwvmplugin.so
-vendor/lib/mediadrm/libwvdrmengine.so
 
 # FM Radio
 bin/fmconfig
@@ -128,8 +128,11 @@ bin/fm_qsoc_patches
 bin/location-mq
 bin/loc_launcher
 etc/permissions/com.qualcomm.location.xml
+-lib/libgps.utils.so
 -lib/libloc_api_v02.so
+-lib/libloc_core.so
 -lib/libloc_ds_api.so
+-lib/libloc_eng.so
 -priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/lib/hw/flp.default.so
 vendor/lib/libgeofence.so
@@ -176,6 +179,7 @@ etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
 # Media
+lib/libOmxVdecHevc.so
 vendor/lib/libDivxDrm.so
 vendor/lib/libExtendedExtractor.so
 vendor/lib/libHevcSwDecoder.so
@@ -203,6 +207,7 @@ vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
+vendor/lib/libperipheral_client.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
