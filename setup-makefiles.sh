@@ -72,6 +72,7 @@ for FILE in `egrep -v '(^#|^$)' proprietary-files-qc.txt`; do
   fi
 done
 (cat << EOF) >> $MAKEFILE
+
 endif
 
 EOF
