@@ -482,8 +482,8 @@ bin/ftmdaemon
 
 # MMI 
 bin/mmi
-etc/mmi/MMI_PCBA.cfg
 etc/mmi/mmi.cfg
+etc/mmi/mmi-pcba.cfg
 etc/mmi/strings.xml
 etc/mmi/strings-zh-rCN.xml
 vendor/lib/libmmi.so
