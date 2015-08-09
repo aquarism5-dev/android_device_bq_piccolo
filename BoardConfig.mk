@@ -23,22 +23,12 @@ TARGET_OTA_ASSERT_DEVICE := piccolo,aquarism5
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/bq/piccolo
 TARGET_KERNEL_CONFIG := cyanogenmod_piccolo_defconfig
-BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x3F ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlyprintk
-BOARD_RAMDISK_OFFSET     := 0x81000000
-BOARD_KERNEL_TAGS_OFFSET := 0x80000100
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
-
-# GPS
-TARGET_GPS_HAL_PATH := $(DEVICE_PATH)/gps
-TARGET_NO_RPC := true
-
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 33554432    # 32MB
@@ -63,11 +53,6 @@ BOARD_SEPOLICY_UNION += \
     system.te \
     system_server.te \
     wcnss_service.te
-
-# WiFi
-TARGET_USES_WCNSS_CTRL := true
-WIFI_DRIVER_MODULE_PATH := "/system/lib/modules/wlan.ko"
-WIFI_DRIVER_MODULE_NAME := "wlan"
 
 # inherit from the proprietary version
 -include vendor/bq/piccolo/BoardConfigVendor.mk
