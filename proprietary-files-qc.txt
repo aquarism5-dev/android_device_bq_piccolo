@@ -469,10 +469,6 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
-# Light
-lib/libminui.so
-vendor/lib/mmi_flashlight.so
-
 # FM Radio
 bin/fmconfig
 bin/fmfactorytest
@@ -492,6 +488,7 @@ vendor/lib/mmi_battery.so
 vendor/lib/mmi_bluetooth.so
 vendor/lib/mmi_camera.so
 vendor/lib/mmi_cpu.so
+vendor/lib/mmi_flashlight.so
 vendor/lib/mmi_fm.so
 vendor/lib/mmi_gps.so
 vendor/lib/mmi_key.so
