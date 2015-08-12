@@ -469,13 +469,6 @@ vendor/lib/libwvdrm_L3.so
 vendor/lib/libwvm.so
 vendor/lib/libWVStreamControlAPI_L3.so
 
-# FM Radio
-bin/fmconfig
-bin/fmfactorytest
-bin/fmfactorytestserver
-bin/fm_qsoc_patches
-bin/ftmdaemon
-
 # MMI 
 bin/mmi
 etc/mmi/mmi.cfg
