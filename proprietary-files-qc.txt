@@ -593,11 +593,13 @@ bin/netmgrd
 bin/qmuxd
 bin/radish
 bin/rfs_access
+bin/rild
 bin/rmt_storage
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
+lib/libril.so
 lib/librmnetctl.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
