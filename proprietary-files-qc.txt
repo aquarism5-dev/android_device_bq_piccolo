@@ -450,6 +450,35 @@ etc/firmware/cpp_firmware_v1_1_6.fw
 etc/firmware/cpp_firmware_v1_2_0.fw
 etc/firmware/cpp_firmware_v1_4_0.fw
 
+# CNE
+bin/cnd
+etc/cne/andsfCne.xml
+etc/cne/SwimConfig.xml
+etc/permissions/cneapiclient.xml
+etc/permissions/com.quicinc.cne.xml
+-framework/cneapiclient.jar
+-framework/com.quicinc.cne.jar
+lib/libcnefeatureconfig.so
+-priv-app/CNEService/CNEService.apk
+vendor/lib/libcne.so
+vendor/lib/libcneapiclient.so
+vendor/lib/libcneconn.so
+vendor/lib/libcneqmiutils.so
+vendor/lib/libmasc.so
+vendor/lib/libvendorconn.so
+vendor/lib/libwqe.so
+
+# DPM
+bin/dpmd
+etc/dpm/nsrm/NsrmConfiguration.xml
+etc/permissions/dpmapi.xml
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+vendor/lib/libdpmctmgr.so
+vendor/lib/libdpmfdmgr.so
+vendor/lib/libdpmframework.so
+vendor/lib/libdpmnsrm.so
+
 # Color convertor
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
@@ -547,6 +576,40 @@ etc/firmware/a330_pm4.fw
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
+# IMS - currently unused but have dependencies to qmi
+-app/ims/ims.apk
+bin/ATFWD-daemon
+bin/imscmservice
+bin/imsdatadaemon
+bin/imsqmidaemon
+bin/ims_rtp_daemon
+etc/permissions/ims.xml
+-framework/ims-common.jar
+vendor/lib/lib-dplmedia.so
+vendor/lib/lib-imscamera.so
+vendor/lib/lib-imsdpl.so
+vendor/lib/lib-imsqimf.so
+vendor/lib/lib-imsrcs.so
+vendor/lib/lib-imsrcscm.so
+vendor/lib/lib-imsrcscmclient.so
+vendor/lib/lib-imsrcscmservice.so
+vendor/lib/lib-imss.so
+vendor/lib/lib-imsSDP.so
+vendor/lib/lib-imsvt.so
+vendor/lib/lib-imsxml.so
+vendor/lib/lib-rcsimssjni.so
+vendor/lib/lib-rcsjni.so
+vendor/lib/lib-rtpcommon.so
+vendor/lib/lib-rtpcore.so
+vendor/lib/lib-rtpdaemoninterface.so
+vendor/lib/lib-rtpsl.so
+vendor/lib/libmmrtpdecoder.so
+vendor/lib/libmmrtpencoder.so
+vendor/lib/libvcel.so
+
+# LD_PRELOAD
+vendor/lib/libNimsWrap.so
+
 # Media
 vendor/lib/libDivxDrm.so
 vendor/lib/libExtendedExtractor.so
@@ -570,8 +633,10 @@ vendor/lib/libmm-abl-oem.so
 
 # Qualcomm framework
 bin/irsc_util
+bin/qcom-system-daemon
 vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
+vendor/lib/libdsnetutils.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
 vendor/lib/libqcci_legacy.so
@@ -579,6 +644,7 @@ vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
 vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
 vendor/lib/libqmi_csi.so
@@ -594,14 +660,18 @@ bin/qmuxd
 bin/radish
 bin/rfs_access
 bin/rild
+bin/rmnetcli
 bin/rmt_storage
+bin/qmiproxy
 etc/permissions/qcnvitems.xml
 etc/permissions/qcrilhook.xml
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
+lib/libreference-ril.so
 lib/libril.so
+lib/librilutils.so
 lib/librmnetctl.so
-vendor/lib/libcneapiclient.so
+vendor/lib/libCommandSvc.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libnetmgr.so
@@ -625,6 +695,21 @@ vendor/lib/libthermalioctl.so
 bin/time_daemon
 -vendor/lib/libtime_genoff.so
 vendor/lib/libTimeService.so
+
+# Wfd
+vendor/lib/libwfdcommonutils.so
+vendor/lib/libwfdhdcpcp.so
+vendor/lib/libwfdmmsink.so
+vendor/lib/libwfdmmsrc.so
+vendor/lib/libwfdmmutils.so
+vendor/lib/libwfdnative.so
+vendor/lib/libwfdrtsp.so
+vendor/lib/libwfdsm.so
+vendor/lib/libwfduibcinterface.so
+vendor/lib/libwfduibcsink.so
+vendor/lib/libwfduibcsinkinterface.so
+vendor/lib/libwfduibcsrc.so
+vendor/lib/libwfduibcsrcinterface.so
 
 # Widevine firmware
 etc/firmware/widevine.b00

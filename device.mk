@@ -34,9 +34,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=PiccoloRIL
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \

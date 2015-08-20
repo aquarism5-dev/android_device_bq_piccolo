@@ -43,9 +43,6 @@ BOARD_FLASH_BLOCK_SIZE             := 131072      # (BOARD_KERNEL_PAGESIZE * 64)
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TARGET_RECOVERY_DENSITY := xhdpi
 
-# RIL
-BOARD_RIL_CLASS := ../../../device/bq/piccolo/ril/
-
 # SELinux
 BOARD_SEPOLICY_DIRS += \
     device/bq/piccolo/sepolicy
