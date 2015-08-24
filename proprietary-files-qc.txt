@@ -624,6 +624,7 @@ bin/qmuxd
 bin/radish
 bin/rfs_access
 bin/rmt_storage
+lib/libril.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
 vendor/lib/libmdmdetect.so
