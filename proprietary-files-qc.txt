@@ -624,6 +624,10 @@ bin/qmuxd
 bin/radish
 bin/rfs_access
 bin/rmt_storage
+lib/libcnefeatureconfig.so
+lib/libreference-ril.so
+lib/libril.so
+lib/librilutils.so
 lib/librmnetctl.so
 vendor/lib/libcneapiclient.so
 vendor/lib/libconfigdb.so
