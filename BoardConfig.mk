@@ -50,6 +50,7 @@ BOARD_SEPOLICY_DIRS += \
 BOARD_SEPOLICY_UNION += \
     file.te \
     file_contexts \
+    nfc.te \
     system.te \
     system_server.te \
     wcnss_service.te
