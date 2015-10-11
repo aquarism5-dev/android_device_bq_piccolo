@@ -21,7 +21,7 @@ DEVICE_PATH := device/bq/piccolo
 TARGET_OTA_ASSERT_DEVICE := piccolo,aquarism5
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/bq/piccolo
+TARGET_KERNEL_SOURCE := kernel/cyanogen/msm8916
 TARGET_KERNEL_CONFIG := cyanogenmod_piccolo_defconfig
 
 # Bluetooth
@@ -52,7 +52,6 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     nfc.te \
     system.te \
-    system_server.te \
     wcnss_service.te
 
 # inherit from the proprietary version
